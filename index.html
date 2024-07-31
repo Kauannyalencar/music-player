@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yas's playlist</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BoxIcons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="src/css/styles2.css">
+    <link rel="stylesheet" href="src/css/scroll.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+
+</head>
+
+<body>
+    <header class="search-header">
+        <div class="inputs-search">
+            <i class="logo icons fa-solid fa-feather logo"></i>
+            <input type="text" class="search-input" placeholder="What do you want to listen to?" />
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </header>
+    <main>
+        <section class="music-app">
+            <div class="player">
+                <header class="player-header">
+                    <h1 class="playlist-title">Playlist</h1>
+                </header>
+                <img class="capa" src="" alt="capa">
+                <span id="musicName"></span>
+                <span id="musicAuthor"></span>
+                <audio id="player"
+                    src="songs/Taylor Swift - Who’s Afraid of Little Old Me_ (Official Lyric Video).mp3"></audio>
+                <div class="controls">
+                    <button id="fav" class="btn">
+                        <i class='bx bx-repeat'></i>
+                    </button>
+                    <button id="prevButton" class="btn">
+                        <i class="bx bx-skip-previous"></i>
+                    </button>
+                    <button id="playPauseButton" class="btn">
+                        <i class="bx bx-caret-right"></i>
+                    </button>
+                    <button id="nextButton" class="btn">
+                        <i class="bx bx-skip-next"></i>
+                    </button>
+                    <button id="shuffle" class="btn">
+                        <i class='bx bx-shuffle'></i>
+                    </button>
+                </div>
+
+                <div class="footer">
+                    <span class="currentTime">0:00 </span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1>Playlist</h1>
+                <ul class="playlist-songs"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

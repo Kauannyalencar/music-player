@@ -1,0 +1,46 @@
+@media screen and (max-width:780px) {
+    .search-header {
+        position: fixed;
+    }
+    
+    .music-app {
+        height: 100%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .player {
+        flex: 1;
+        width: 100%;
+        margin-top: 55px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn> {
+        font-size: 30px;
+    }
+    .capa {
+        width: 200px;
+    }
+    
+    .playlist {
+        flex: 1;
+        width: 80%;
+        border-radius: 10px;
+        /* overflow: hidden; */
+        /* background-color: aqua; */
+    }
+    
+    #musicName, .playlist > h1{
+        font-size: 20px;
+    }
+
+}
